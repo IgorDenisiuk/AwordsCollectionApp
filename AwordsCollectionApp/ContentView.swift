@@ -26,7 +26,7 @@ struct ContentView: View {
             
             if showShape {
                 Heart(width: 250, height: 250)
-                    .transition(.trasition)
+                    .transition(.transition)
             }
             
             Spacer()
@@ -43,7 +43,7 @@ struct ContentView: View {
 }
 
 extension AnyTransition {
-    static var trasition: AnyTransition {
+    static var transition: AnyTransition {
         let insertion = AnyTransition.move(edge: .leading)
             .combined(with: .scale)
         let removal = AnyTransition.scale
